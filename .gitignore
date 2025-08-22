@@ -39,3 +39,11 @@
 
 # debug information files
 *.dwo
+
+###
+
+# os specific files
+.DS_Store
+
+# build folders
+build/
