@@ -58,7 +58,9 @@ add_executable(
 target_include_directories(
     main PRIVATE
     ${FOLDERS}
+    "${CMAKE_SOURCE_DIR}/external/included"
 )
+# files in external/included are also included to allow downloading libraries and using them
 
 # CHANGE: link installed libraries here
 target_link_libraries(
