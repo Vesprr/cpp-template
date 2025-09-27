@@ -31,7 +31,9 @@ else
 fi
 
 # install packages (for current template)
+echo -e "${CYAN}Installing fmt package from vcpkg ${PURPLE}./external/vcpkg/vcpkg install fmt${RESET}"
 ./external/vcpkg/vcpkg install fmt
+echo -e "${CYAN}To install packages run ./external/vcpkg/vcpkg install <package_name>${RESET}"
 
 # setup cmake preset; REMOVE after setting up preset
 cmake --preset=default
